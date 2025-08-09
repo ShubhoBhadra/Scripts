@@ -1,0 +1,156 @@
+% Resume in Latex
+% Author : Shubho Bhadra
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+\pdfgentounicode=1
+
+\newcommand{\resumeItem}[1]{
+  \item\small{{#1 \vspace{-2pt}}}
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]} 
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}} 
+\newcommand{\resumeItemListStart}{\begin{itemize}} 
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}} 
+
+\begin{document}
+
+\begin{center}
+    \textbf{\Huge \scshape Shubho Bhadra} \\ \vspace{1pt}
+    \small +91-9973772826 $|$ \href{mailto:x@x.com}{\underline{shubho1997bhadra@gmail.com}} $|$ 
+    \href{https://linkedin.com/in/shubho-bhadra/}{\underline{linkedin.com/in/shubho-bhadra/}}
+\end{center}
+
+%-----------Professional Summary-----------
+\section{Professional Summary}
+\begin{itemize}[leftmargin=0.15in, label={}]
+\item \small{
+Results-driven Software Engineer with 3+ years of experience specializing in backend development, automation, and cloud-native infrastructure. Proven ability to streamline deployment processes, improve security, and manage end-to-end testing in fast-paced environments. Experienced in working with modern DevOps tools and container orchestration platforms.
+}
+\end{itemize}
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+\resumeSubHeadingListStart
+
+\resumeSubheading
+{HCL Technologies Ltd $|$ \textit{Senior Software Engineer}}{\textbf{May 2025 - Present}}
+{\textbf{Project: Cloud Service Mesh}}{\textbf{Client: Google India - Onsite}}
+\resumeItemListStart
+  \resumeItem{Delivered CSM v1.24.6-asm.4 as a core contributor, resolving 10+ major bugs and providing integration support across 5 different platforms, ensuring an on-schedule, production-ready release with zero major defects and seamless multi-platform compatibility.}
+  \resumeItem{Implemented security vulnerability fixes in CSM (GoLang-based) by addressing 10+ critical and high CVEs, enhancing compliance with internal security benchmarks and reducing potential attack by 70\%.}
+  \resumeItem{Monitored Kubernetes clusters via Stackdriver post CSM upgrades, identifying 90\% of post-deployment issues within 5 hours and ensuring 99\% uptime and smooth rollout across environments.}
+\resumeItemListEnd
+
+\resumeSubheading
+{HCL Technologies Ltd $|$ \textit{Software Engineer}}{\textbf{July 2022 -- April 2025}}
+{\textbf{Project: Network Operation Master}}{\textbf{Client: Nokia - Onsite}}
+\resumeItemListStart
+  \resumeItem{Led security vulnerability remediation in GoLang and Python microservices, containerized services post-fix and executed Helm-based upgrade and rollback of CMDB and CITM components on Kubernetes during EOL transitions, ensuring 100\% regression validation and minimal downtime.}
+  \resumeItem{Automated OpenStack lab installation and upgrade using Python, reducing manual intervention by 90\% through release-specific scripting, repository integration, and command execution logic, significantly enhancing deployment speed and consistency.}
+  \resumeItem{Designed and implemented a Hotfix automation framework to identify, validate, and package updated Docker images and dependencies into versioned tarballs, reducing turnaround time by 60\% for critical customer patch deliveries.}
+  \resumeItem{Monitored Kubernetes environments using Grafana dashboards and automated scratch lab redeployments upon pod failure thresholds, maintaining 99\% system availability through proactive performance validation and predefined test suites.}
+\resumeItemListEnd
+
+\resumeSubheading
+{HCL Technologies Ltd $|$ \textit{Software Engineer}}{\textbf{Jan 2022 - June 2022}}
+{\textbf{Project: Femto Platform Security Development}}{\textbf{Client: Nokia - Onsite}}
+\resumeItemListStart
+  \resumeItem{Upgraded IPSec (strongSwan) from v5.9.5 to v5.9.11, implementing custom client-side patches to support secure IKEv2 communication between FEMTO Small Cell and Security Gateway (SeGw), ensuring 100\% compatibility across 4G/5G networks.}
+  \resumeItem{Strengthened tunnel security by enabling Diffie-Hellman groups 14--21 with Perfect Forward Secrecy (PFS), aligning with latest cryptographic standards and reducing key exchange vulnerabilities by 70\%.}
+\resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+%-----------TECHNICAL SKILLS-----------
+\section{Technical Skills}
+\begin{itemize}[leftmargin=0.15in, label={}]
+\item \small{
+\textbf{Languages}{: Python, GoLang, Shell Script} \\
+\textbf{Database}{: MySQL} \\
+\textbf{Containerization \& Orchestration}{: Docker, Kubernetes, Helm Charts} \\
+\textbf{DevOps Tools}{: Jenkins, Gerrit, Grafana} \\
+\textbf{Data Formats}{: JSON, YAML} \\
+\textbf{Operating Systems}{: RHEL, Windows} \\
+\textbf{Cloud \& Virtualization}{: OpenStack, Virtual Machines, Google Cloud}
+}
+\end{itemize}
+
+%-----------EDUCATION-----------
+\section{Education}
+\resumeSubHeadingListStart
+\resumeSubheading
+{Asansol Engineering College}{Asansol, WB}
+{Bachelor of Technology in Electrical Engineering} {Aug 2017 - Jul 2021}
+\resumeSubHeadingListEnd
+
+%-----------AWARDS-----------
+\section*{Awards and Appreciations}
+\textbf{HCL Technologies Ltd} $|$ \textit View: \href{https://www.linkedin.com/feed/update/urn:li:activity:7151181385423032320/}{LinkedIn}}
+\begin{itemize}[leftmargin=1.5em]
+  \item The Project Manager officially acknowledged the dedicated efforts and successful delivery of the strongSwan upgrade in the Platform Security Project.
+\end{itemize}
+
+\end{document}
